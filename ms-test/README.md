@@ -56,8 +56,11 @@ After that HTML should run as-is without any script files.
 
 Neha - 04-06-2020
 
+
+
 Added Gulp script to automatically inject js file contents in html file.
 So to build the code, now run the command
+npm update
 npm run prod
 After building, this will generate an html file in assets directory. This HTML is a standalone file and should work anywhere.
 
