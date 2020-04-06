@@ -31,7 +31,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=D:/MSTest/ms-test/src/main.js.map
+//# sourceMappingURL=D:/GitClone/mqAngular/ms-test/src/main.js.map
 
 /***/ }),
 
@@ -66,7 +66,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=D:/MSTest/ms-test/src/app.component.js.map
+//# sourceMappingURL=D:/GitClone/mqAngular/ms-test/src/app.component.js.map
 
 /***/ }),
 
@@ -114,7 +114,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=D:/MSTest/ms-test/src/app.module.js.map
+//# sourceMappingURL=D:/GitClone/mqAngular/ms-test/src/app.module.js.map
 
 /***/ }),
 
@@ -130,7 +130,7 @@ var AppModule = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=D:/MSTest/ms-test/src/environment.js.map
+//# sourceMappingURL=D:/GitClone/mqAngular/ms-test/src/environment.js.map
 
 /***/ }),
 
