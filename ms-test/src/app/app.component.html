@@ -1,26 +1,21 @@
 <div class="container">
   <h2>
-  Initial Margin
-</h2>
-<table class="table table-striped table-bordered">
-  <ng-container *ngFor="let group of groups">
-    <thead>
-      <tr>
-        <th scope="col">EXCHANGE</th>
-        <th scope="col">CURRENCY</th>
-        <th scope="col">INITIAL MARGIN</th>
-        <th scope="col">USD EQUIVALENT</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let initialMargin of group.initialMargins">
-        <td>{{initialMargin.exchange}}</td>
-        <td>{{initialMargin.currency}}</td>
-        <td>{{initialMargin.imNumber}}</td>
-        <td>{{initialMargin.imInBase}}</td>
-      </tr>
-    </tbody>
-  </ng-container>
-</table>
+    Initial Margin
+  </h2>
+  
+  <mat-form-field>
+    <mat-label>Search</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="">
+  </mat-form-field>
 
+  <mat-table #table [dataSource]="dataSource" matSort>
+    <ng-container matColumnDef="{{column.id}}" *ngFor="let column of columnNamesinitialMargins">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> {{column.value}} </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element[column.id]}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+  <mat-paginator #paginator [pageSize]="10" [pageSizeOptions]="[10, 20, 100]" [showFirstLastButtons]="true"> </mat-paginator>
 </div>
