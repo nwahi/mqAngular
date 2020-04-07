@@ -1,11 +1,19 @@
 <h1>
-  {{title}}
-
-  
+  Initial Margin
 </h1>
 <table>
   <ng-container *ngFor="let group of groups">
-      <tr><td><h2>{{group.name}}</h2></td></tr>
-      <tr *ngFor="let item of group.items"><td>{{item}}</td></tr>
+      <tr>
+        <th>EXCHANGE</th>
+        <th>CURRENCY</th>
+        <th>INITIAL MARGIN</th>
+        <th>USD EQUIVALENT</th>
+      </tr>
+      <tr *ngFor="let initialMargin of group.initialMargins">
+        <td>{{initialMargin.exchange}}</td>
+        <td>{{initialMargin.currency}}</td>
+        <td>{{initialMargin.imNumber}}</td>
+        <td>{{initialMargin.imInBase}}</td>
+      </tr>
   </ng-container>
 </table>
